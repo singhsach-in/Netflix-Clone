@@ -1,0 +1,119 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+body {
+  background-color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+/* nav-bar  */
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  object-fit: contain;
+  justify-content: space-between;
+  padding:  10px;
+  position: fixed;
+  transition: .3s ease-in-out;
+  z-index: 1;
+}
+.netflix-logo {
+  width: 75px;
+  
+}
+.netflix-avatar {
+  width: 25px;
+}
+.nav-black {
+  background-color: #111;
+}
+
+/* hero-section  */
+
+.hero-section-container {
+  /* color: white; */
+  background-image: url(images/banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 448px;
+  background-size: cover;
+  object-fit: contain;
+
+}
+.hero-section {
+  padding-top: 120px;
+  margin-left: 15px;
+  height: 190px;
+}
+.hero-section-title {
+  margin-bottom: 5px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.hero-section-btn {
+  display: flex;
+    gap: 15px;
+}
+.play, .my-list {
+  width: 90px;
+  height: 30px;
+  background-color: #0a0a09c9;
+  color: white;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.play:hover, .my-list:hover {
+  
+  background-color: #fff;
+  color: #111;
+  /* margin-right: 10px; */
+
+}
+.hero-section-desc {
+  margin-top: 10px;
+  line-height: 1.3;
+  max-width: 360px;
+  font-size: 0.8rem;
+}
+.fade-bottom {
+  margin-top: 145px;
+  height: 7.4rem;
+  background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
+/* posters-row  */
+.posters-row-container {
+ margin-left: 20px;
+}
+.posters-row {
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+ 
+  padding: 20px;
+} 
+.poster {
+  object-fit: contain;
+  max-height: 100px;
+  width: 100%;
+  transition: all 0.2s ease-in-out; 
+}
+.poster:hover {
+  transform:  scale(1.08);
+}
+.posters-row::-webkit-scrollbar {
+  display: none;
+}
+
+.poster-lg {
+  max-height: 250px;
+  transition: all 0.2s ease-in-out; 
+}
+.poster-lg:hover {
+  transform:  scale(1.09);
+}
